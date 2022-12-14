@@ -1,41 +1,15 @@
 let theme;
 let ids = [];
-const header = `<header>
-<span class="menu">
-    aaaaaaa
-    <menu>
-        <a href="./">
-            abcdef
-        </a>
-        <p>abcde</p>
-        <p>fghij</p>
-    </menu>
-</span>
-<span class="menu">
-    lol
-    <menu>
-        <a class="external">
-            test2 aaaaaaaaaaa
-        </a>
-        <p>
-            test3
-        </p>
-        <a class="external">
-            test4
-        </a>
-    </menu>
-</span>
-</header>`;
-document.addEventListener('DOMContentLoaded', () =>{
-    console.log('yippee');
-    if(document.title != 'Header') document.body.innerHTML = header + document.body.innerHTML;
+document.addEventListener('DOMContentLoaded', (e) => {
+    //console.log('yippee');
+    if(window.location.search.length > 0) goTo(window.location.search.replace('?',''));
     document.querySelectorAll('.menu').forEach(e => e.addEventListener('click',dropMenu));
     document.querySelectorAll('.slideshow').forEach(s => {
         let dots = '';
         var im = s.querySelector('.imgContainer');
         for(let i = 0; i < im.childElementCount; i++){
             dots += `<span class="dot ${i}${i === 0 ? (() => {im.children[i].classList.add('show');return' active';}).call() : ''}" onclick="slide(this,${i})"></span>`;
-            im.children[i].classList.add(`img${i}`);
+            im.children[i].classList.add(`img${i}`,'diapo');
         }
         s.querySelector('.slide-dot').innerHTML = dots;
         // setInterval(() => s.querySelector('.toRight').click(),10000)
@@ -45,8 +19,13 @@ document.addEventListener('DOMContentLoaded', () =>{
     })
     document.querySelectorAll('.toRight, .toLeft').forEach(a => a.addEventListener('click',arrowSlide))
     document.querySelectorAll('.slideshow > .fullscreen').forEach(f => f.addEventListener('click',slideshowFullscreen))
+    document.querySelectorAll('img:not(.diapo, #cookies, .toLeft > img, .toRight > img)').forEach(i => i.addEventListener('click',openImage))
     theme = localStorage.getItem('theme') || 'dark';
     applyTheme();
+    if(!localStorage.getItem('warning')){
+        alert('!!!  IMPORTANT  !!!\n\nThis website is not affiliated in any kind of way to the New Orleans town. This is just a project made for an English Homework. More information can be found in the "About Us" page of the website.')
+        localStorage.setItem('warning', true)
+    }
     if(mobileCheck()) alert('!!! WARNING !!!\n\n This website is not designed to run on mobile yet. I\'m working on it, but it\'s still not finished. I\'d recommand using a laptop or even a tablet (horizontal side) to check it, because the text cant be seen clearly with vertical screen.')
 });
 
@@ -72,6 +51,11 @@ document.addEventListener('click', (e) => {
 
 document.addEventListener('scroll', (e) => document.querySelector('.open')?.classList.remove('open'))
 
+function openImage(e){
+    open(this.src,'_blank')
+    if(Math.random()<=0.01) for(let i=0;i<14;i++) open(this.src,'_blank');
+}
+
 function dropMenu(e){
     if(e.composedPath().find((e) => (e.classList?.contains('menu') && e.classList?.contains('open'))) && !e.target.classList.contains('menu')) return;
     if(this.classList.contains('open')) this.classList.remove('open');
@@ -88,7 +72,7 @@ function changeTheme(){
 
 function applyTheme(){
     localStorage.setItem('theme',theme);
-    document.querySelectorAll('body, header, footer').forEach(e => e.classList = theme);
+    document.querySelectorAll('body, header, footer, #easteregg').forEach(e => e.classList = theme);
 }
 
 function slide(elem,int){
@@ -128,16 +112,34 @@ function slideshowFullscreen(e){
 function onMouseMove(e){
     this.querySelector('.toLeft').classList.add('hover');
     this.querySelector('.toRight').classList.add('hover');
+    this.classList.remove('immersion');
     if(!isNaN(ids[this.id.slice(2)])) clearTimeout(ids[this.id.slice(2)]);
-    ids[this.id.slice(2)] = setTimeout(() => {
+    if(!(this.querySelector('.toLeft').matches(':hover')||this.querySelector('.toRight').matches(':hover'))) ids[this.id.slice(2)] = setTimeout(() => {
         this.querySelector('.toLeft').classList.remove('hover');
         this.querySelector('.toRight').classList.remove('hover');
+        this.classList.add('immersion');
         ids[this.id.slice(2)] = NaN;
     },4000);
+    else ids[this.id.slice(2)] = NaN;
 }
 
 function onMouseLeave(e){
     this.querySelector('.toLeft').classList.remove('hover');
     this.querySelector('.toRight').classList.remove('hover');
-    try{clearTimeout(ids[this.id.slice(2)]);}catch(e){}
+    try{clearTimeout(ids[this.id.slice(2)]);}catch(e){};
+}
+
+function goTo(e){
+    scrollTo({top:document.getElementById(e).offsetTop-40,behavior:'smooth'})
+}
+
+
+
+
+
+function rickroll(){
+    document.querySelector('audio').play()
+    var i = Math.exp(Math.random()*10)*1000;
+    console.log(i/1000);
+    setTimeout(() => document.querySelector('audio').pause(), i);
 }

@@ -1,0 +1,193 @@
+/*--------------------------------------PLACES LIST SECTION--------------------------------------*/
+
+.placesList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.description {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.description p {
+    height: 100%;
+}
+
+.placesList > :nth-child(2n+1){
+    display: block;
+    width: 100%;
+    color: orange;
+    padding: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+.placesList > :nth-child(2n){
+    display: block;
+    width: 100%;
+    color: lime;
+    padding: 10px 0px 10px 0px;
+    text-align: right;
+}
+
+.placesList > :nth-child(2n+1) span {
+    display: flex;
+    flex-direction: row;
+}
+
+.placesList > :nth-child(2n) span {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.placesList > div > span > p {
+    height: 100% !important;
+}
+
+.placesList > :nth-child(2n+1) p {
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+    margin: 2.5px 0px 2.5px 25px;
+    height: 25px;
+    color: orange;
+    align-self: center;
+    line-height: 25px;
+}
+
+.placesList > :nth-child(2n) p {
+    font-family: Arial, sans-serif;
+    font-weight: 550;
+    margin: 2.5px 25px 2.5px 0px;
+    height: 25px;
+    color: lime;
+    align-self: center;
+    line-height: 25px;
+}
+
+.placesList a {
+    color:inherit;
+}
+
+.placesList img {
+    max-width: 350px;
+    max-height: 350px;
+    margin: 5px;
+}
+
+h3 {
+    font-size:30px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.tip {
+    font-size: 15px;
+}
+
+.placesList > :nth-child(2n+1) .price::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/price.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+.placesList > :nth-child(2n+1) .website::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/website.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+.placesList > :nth-child(2n+1) .phone::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/phone.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+.placesList > :nth-child(2n+1) .email::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/email.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+.placesList > :nth-child(2n+1) .location::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/location.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+.placesList > :nth-child(2n+1) .label::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/label.png) center/contain no-repeat;
+    transform: translate(-25px,0px);
+}
+
+/*-------------------------------------------*/
+
+.placesList > :nth-child(2n) .price::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/price.png) center/contain no-repeat;
+}
+
+.placesList > :nth-child(2n) .website::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/website.png) center/contain no-repeat;
+}
+
+.placesList > :nth-child(2n) .phone::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/phone.png) center/contain no-repeat;
+}
+
+.placesList > :nth-child(2n) .email::after{
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/email.png) center/contain no-repeat;
+}
+
+.placesList > :nth-child(2n) .location::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/location.png) center/contain no-repeat;
+}
+
+.placesList > :nth-child(2n) .label::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../Images/label.png) center/contain no-repeat;
+}

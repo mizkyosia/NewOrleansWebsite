@@ -1,0 +1,46 @@
+/*--------------------------------------IMAGE SOURCES SECTION--------------------------------------*/
+
+p {
+    color: #ff4500;
+    text-shadow: 0px 0px 7px black, 0px 0px 5px black;
+    margin-left: 5px;
+    font-weight: 550;
+    line-height: 25px;
+    line-break: anywhere;
+}
+
+ul {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+ul li img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.image {
+    margin-left: 30px;
+}
+
+.image::before {
+    background:url(../Images/image.png) center/contain;
+    width: 25px;
+    height: 25px;
+}
+
+.website {
+    margin-left: 30px;
+}
+
+.website::before {
+    background:url(../Images/website.png) center/contain;
+    width: 25px;
+    height: 25px;
+}

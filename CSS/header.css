@@ -1,0 +1,123 @@
+/*-------------------HEADER MENU SECTION-------------------*/
+
+header {
+    z-index: 9;
+    position: fixed;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0px;
+    box-shadow: 0px 5px 10px #00000077;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header * {
+    z-index: 10;
+}
+
+.menu::before {
+    transition: all .4s;
+    content: '';
+    background: url(../Images/arrow.png) center/contain no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(2px, 14px) rotateZ(90deg);
+    bottom: 30px;
+    z-index: 12;
+    opacity: 100%;
+    display: block;
+}
+
+.menu.open::before {
+    transform: translate(2px, 14px) rotateZ(90deg) rotateY(180deg);
+}
+
+.menu {
+    text-align: center;
+    width: 15%;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: center;
+    cursor: pointer;
+    justify-content: center;
+    transition: all .4s;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.menu p,
+.menu a {
+    color: white;
+    font-size: 110%;
+    text-shadow: 1px 1px 5px black;
+    font-weight: bold;
+    font-family: calibri;
+    padding: 0px 10px;
+    border-radius: 7px;
+    line-height: normal;
+    text-decoration: none;
+    z-index: 5;
+}
+
+.menu a.external::before {
+    transition: all .4s;
+    content: '';
+    background: url(../Images/external.png) center/contain no-repeat;
+    transform: translate(-5px, 5px);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    z-index: 12;
+    opacity: 100%;
+    display: block;
+}
+
+.menu a:hover,
+.menu p:hover {
+    background-color: #ff4500bf;
+}
+
+.menu:hover,
+.menu.open {
+    background-color: #ff4500bf;
+}
+
+.menu>menu {
+    clear: both;
+    width: auto;
+    position: relative;
+    opacity: 0%;
+    transition: all .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-200%);
+    border-radius: 7px;
+    box-shadow: 0px 5px 10px #00000077;
+}
+
+.menu.open>menu {
+    opacity: 100%;
+    transform: translateY(0%);
+    display: flex;
+}
+
+header.dark, header.dark * {
+    background-color: black;
+    color: white;
+}
+
+header.light, header.light * {
+    background-color: #aaaaaa;
+    color: black;
+}
+
+svg.separator {
+    height: 2px;
+    width: 100%;
+    margin: 5px 0px;
+    background-color: transparent;
+}

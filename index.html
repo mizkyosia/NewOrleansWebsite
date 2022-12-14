@@ -4,36 +4,172 @@
 <head>
     <title>Visit New Orleans</title>
     <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/slideshow.css">
     <script src="./index.js"></script>
 </head>
 
 <body>
+    <header>
+        <span class="menu">
+            Museums
+            <menu>
+                <a href="./Museums/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="./Museums/#noma">NOMA</a>
+                <a href="./Museums/#ww2">WWII National Museum</a>
+                <a href="./Museums/#mckenna">African American Art Museum</a>
+                <a href="./Museums/#pharmacy">Museum of Pharmacy</a>
+                <a href="./Museums/mardi-gras">Mardi Gras World</a>
+                <a href="./Museums/#thnoc">Historic Collection</a>
+                <a href="./Museums/#jazz">Jazz Museum</a>
+                <a href="./Museums/#voodoo">Voodoo Museum</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-c49-New_Orleans_Louisiana.html"
+                    target="_blank">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Tourism
+            <menu>
+                <a href="./Tourism/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="./Tourism/#audubon">Audubon Zoo</a>
+                <a href="./Tourism/#city-park">New Orleans City Park</a>
+                <a href="./Tourism/#botanical-garden">Botanical Garden</a>
+                <a href="./Tourism/#sculpture-garden">Besthoff Sculpture Garden</a>
+                <a href="./Tourism/#cathedral">St Louis Cathedral</a>
+                <a href="./Tourism/#plantation">Oak Alley Plantation</a>
+                <a href="./Tourism/#armstrong-park">Louis Armstrong Park</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Food & Drinks
+            <menu>
+                <a href="./Restaurants/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="./Restaurants/#commander-palace">Commander's Palace</a>
+                <a href="./Restaurants/#cafe-du-monde">Café du Monde</a>
+                <a href="./Restaurants/#tipitina">Tipitina's</a>
+                <a href="./Restaurants/#pat-obrien">Pat O'Brien's Bar</a>
+                <a href="./Restaurants/#spotted-cat">Spotted Cat Music Club</a>
+                <a href="./Restaurants/#napoleon">Napoleon's House</a>
+                <a href="./Restaurants/#brennan">Brennan's</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Hotels
+            <menu>
+                <a href="./Hotels/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="./Hotels/#nopsi">NOPSI Hotel</a>
+                <a href="./Hotels/#ace">Ace Hotel</a>
+                <a href="./Hotels/#alder">Alder Hotel Uptown</a>
+                <a href="./Hotels/#ac-hotel">AC Hotel</a>
+                <a href="./Hotels/#andrew-jackson">Andrew Jackson Hotel</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <button id="easteregg" title="Click at your own risks" onclick="rickroll()">Secret button</button>
+        <audio id="rickroll" src="./easteregg.mp3" style="display: none;" loop></audio>
+    </header>
     <section class="top">
         <div class="photo" style="background-image: url(./Images/street1.webp);"></div>
         <h1>Welcome to the New Orleans website !</h1>
     </section>
     <svg width="90%" height="50px">
-        <rect width="100%" height="2" fill="grey" style="transform: translate(0%,10px);"/>
+        <rect width="100%" height="2" fill="grey" style="transform: translate(0%,10px);" />
         <rect width="90%" height="2" fill="grey" style="transform: translate(5%,20px);" />
         <rect width="80%" height="2" fill="grey" style="transform: translate(10%,30px);" />
         <rect width="70%" height="2" fill="grey" style="transform: translate(15%,40px);" />
     </svg>
     <h2>All the tools you need to plan your travel in our wonderful city, all in one place</h2>
-    <div class="slideshow" style="width:100%;height:auto;">
-        <button class="toRight"><img src="./Images/arrow_right.svg"></button>
-        <button class="toLeft"><img src="./Images/arrow_left.svg"></button>
-        <button class="fullscreen"></button>
-        <div class="imgContainer">
-            <img src="./Images/street2.jpg">
-            <img src="./Images/street3.jpg">
-            <img src="./Images/street4.jpg">
-            <img src="./Images/street5.webp">
+    <p>New Orleans is a city of mixed origins, both African and French. It is a wonderful and beautiful place, full of
+        life in the day and vibrant at night, especially alongside Bourbon Street. It is world-renowned for its Creole
+        food, its festivals and celebrations (like Mardi Gras), its French Quarter, and of course, its music. In this
+        website, we listed everything you need to know to plan your travel, including hotels, restaurants & bars,
+        museums and other things to do.</p>
+    <section>
+        <h2>The French Quarter</h2>
+        <p>
+            The French Quarter is quite possibly the backbone of New Orleans. It is the oldest part of the city, as well
+            as the one that brings the most tourists. It was built by the first French settlers when they arrived in
+            America. It has been now designated as a National Historic Landmark, and is home to dozens of restaurants,
+            music clubs, bars, museums and other activities related to tourism.
+            <br>
+            <br>
+            It's a lovely and beautiful place, perfect for a little walk during the day, when you can enjoy its French 
+            and Spanish architecture and its joyful colors. But this place isn't only active during the day ! Nightlife
+            is really important in New Orleans, especially in that quarter. Music clubs and bars are often open at night,
+            and streets are always lit up. It is a vibrant town, where you'll always find something that picks your
+            interest.
+            <br>
+            <br>
+        </p>
+        <div class="slideshow" style="width:75%;height:auto;">
+            <button class="toRight"><img src="./Images/arrow_right.svg"></button>
+            <button class="toLeft"><img src="./Images/arrow_left.svg"></button>
+            <button class="fullscreen"></button>
+            <div class="imgContainer">
+                <img src="./Images/street2.jpg">
+                <img src="./Images/street3.jpg">
+                <img src="./Images/street4.jpg">
+                <img src="./Images/street5.webp">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/37/fb/cb/img-20180809-wa0259-largejpg.jpg?w=2400&h=-1&s=1">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/04/06/cd/18-french-quarter-new.jpg?w=2400&h=-1&s=1">
+                <img src="https://www.travellens.co/content/images/2021/11/French-Quarter.jpg">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/27/04/06/a2/5-french-quarter-new.jpg?w=2400&h=-1&s=1">
+            </div>
+            <div class="slide-dot">
+            </div>
         </div>
-        <div class="slide-dot">
-        </div>
-    </div>
+    </section>
+    <footer>
+        <a href="./AboutUs/">About us</a>
+        <a href="./Cookies/">Cookies</a>
+        <a href="./Privacy">Privacy policy</a>
+        <a href="javascript:changeTheme()">Change theme</a>
+    </footer>
 </body>
 
 </html>

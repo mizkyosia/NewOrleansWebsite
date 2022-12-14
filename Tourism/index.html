@@ -4,48 +4,295 @@
 <head>
     <title>Tourism - Visit New Orleans</title>
     <link rel="icon" href="../icon.png">
-    <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/list.css">
     <script src="../index.js"></script>
 </head>
 
 <body>
+    <header>
+        <span class="menu">
+            Museums
+            <menu>
+                <a href="../Museums/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Museums/#noma">NOMA</a>
+                <a href="../Museums/#ww2">WWII National Museum</a>
+                <a href="../Museums/#mckenna">African American Art Museum</a>
+                <a href="../Museums/#pharmacy">Museum of Pharmacy</a>
+                <a href="../Museums/mardi-gras">Mardi Gras World</a>
+                <a href="../Museums/#thnoc">Historic Collection</a>
+                <a href="../Museums/#jazz">Jazz Museum</a>
+                <a href="../Museums/#voodoo">Voodoo Museum</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-c49-New_Orleans_Louisiana.html"
+                    target="_blank">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Tourism
+            <menu>
+                <a href="./">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="#audubon">Audubon Zoo</a>
+                <a href="#city-park">New Orleans City Park</a>
+                <a href="#botanical-garden">Botanical Garden</a>
+                <a href="#sculpture-garden">Besthoff Sculpture Garden</a>
+                <a href="#cathedral">St Louis Cathedral</a>
+                <a href="#plantation">Oak Alley Plantation</a>
+                <a href="#armstrong-park">Louis Armstrong Park</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Food & Drinks
+            <menu>
+                <a href="../Restaurants/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Restaurants/#commander-palace">Commander's Palace</a>
+                <a href="../Restaurants/#cafe-du-monde">Café du Monde</a>
+                <a href="../Restaurants/#tipitina">Tipitina's</a>
+                <a href="../Restaurants/#pat-obrien">Pat O'Brien's Bar</a>
+                <a href="../Restaurants/#spotted-cat">Spotted Cat Music Club</a>
+                <a href="../Restaurants/#napoleon">Napoleon's House</a>
+                <a href="../Restaurants/#brennan">Brennan's</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Hotels
+            <menu>
+                <a href="../Hotels/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Hotels/#nopsi">NOPSI Hotel</a>
+                <a href="../Hotels/#ace">Ace Hotel</a>
+                <a href="../Hotels/#alder">Alder Hotel Uptown</a>
+                <a href="../Hotels/#ac-hotel">AC Hotel</a>
+                <a href="../Hotels/#andrew-jackson">Andrew Jackson Hotel</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/SmartDeals-g60864-New_Orleans_Louisiana-Hotel-Deals.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <button id="easteregg" title="Click at your own risks" onclick="rickroll()">Secret button</button>
+        <audio id="rickroll" src="../easteregg.mp3" style="display: none;" loop></audio>
+    </header>
     <section class="top">
         <div class="photo" style="background-image: url(./Images/cathedral.jpg);"></div>
         <h1>Tourist attractions</h1>
     </section>
     <svg width="90%" height="50px">
-        <rect width="100%" height="2" fill="grey" style="transform: translate(0%,10px);"/>
+        <rect width="100%" height="2" fill="grey" style="transform: translate(0%,10px);" />
         <rect width="90%" height="2" fill="grey" style="transform: translate(5%,20px);" />
         <rect width="80%" height="2" fill="grey" style="transform: translate(10%,30px);" />
         <rect width="70%" height="2" fill="grey" style="transform: translate(15%,40px);" />
     </svg>
-    <h2>Tourism is a great part of our city. Each year, more than 19 million people come here to visit and be impressed by the marvels that hide in the town. On this page are listed some of the best tourist attractions in New Orleans, for all ages. There are parks, museums, statues, monuments... There is no doubt that you'll find the perfect place to visit !</h2>
+    <h2>Tourism is a great part of our city. Each year, more than 19 million people come here to visit and be impressed
+        by the marvels that hide in the town. On this page are listed some of the best tourist attractions in New
+        Orleans, for all ages. There are parks, museums, statues, monuments... There is no doubt that you'll find the
+        perfect place to visit !</h2>
     <section class="placesList">
-        <div>
-            <a><h3>Audubon Zoo</h3></a>
-            <p class="tip">Click on the title for more informations</p>
-            <img src="./Images/zoo.jpg">
-            <p class="price">$17-$25 per person</p>
-            <p class="phone">+1 504-861-2537</p>
+        <div id="audubon">
+            <a href="?audubon">
+                <h3>Audubon Zoo</h3>
+            </a>
+            <span>
+                <img src="./Images/zoo.jpg">
+                <p>
+                    The Audubon Zoo is part of the Audubon Nature Institute, alongside Audubon Aquarium of the Americas.
+                    It is a wonderful natural park, covering no less than 58 acres of land, and is the home to more than
+                    2,000 animals, including sea lions, jaguars, black bears, wolves... It was named in honor to John
+                    James Audubon, an artist and naturalist who lived in New Orleans starting from 1821. This is a
+                    really fun place to visit, and it is child-friendly, so if you have kids, don't hesitate to bring
+                    them along !
+                </p>
+            </span>
+            <p class="price">$17-$25 per person, depending on the age</p>
+            <p class="phone"><a href="1-504-861-2537" target="_blank">+1 504-861-2537</a></p>
             <p class="email"><a href="mailto:air@auduboninstitute.org" target="_blank">air@auduboninstitute.org</a></p>
-            <p class="website"><a href="https://audubonnatureinstitute.org/zoo" target="_blank">Visit the website</a></p>
-            <p class="location"><a href="https://www.google.com/maps/place/Audubon+Zoo/@29.9237334,-90.1335955,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a4e1c4a2d6b1:0xa55ba92017f083!8m2!3d29.9237472!4d-90.131399" target="_blank">6500 Magazine St, New Orleans, LA 70118, United States</a></p>
+            <p class="website"><a href="https://audubonnatureinstitute.org/zoo" target="_blank">Visit the website</a>
+            </p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/Audubon+Zoo/@29.9237334,-90.1335955,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a4e1c4a2d6b1:0xa55ba92017f083!8m2!3d29.9237472!4d-90.131399"
+                    target="_blank">6500 Magazine St, New Orleans, LA 70118, United States</a></p>
         </div>
-        <div>
-            <a><h3>test2</h3></a>
+        <div id="city-park">
+            <a href="javascript:goTo('city-park')">
+                <h3>New Orleans City Park</h3>
+            </a>
+            <span>
+                <img src="./Images/park.jpg">
+                <p>
+                    New Orleans' City Park is surely one of the central points of the city. This huge park, 50% larger
+                    than Central Park, covers a surface of 1,300 acres, and hosts the world's largest collection of live
+                    oak trees, some of them even older than 600 years of age. It is a really beautiful and well
+                    maintained park, and it contains multiple attractions and recreation facilities. It's also a really
+                    calm and quiet place, perfect for a little walk if you're tired of the effervescence of the city,
+                    which can be quite overwhelming at times.
+                </p>
+            </span>
+            <p class="price">Free</p>
+            <p class="phone"><a href="1-504-481-4888" target="_blank">+1 504-482-4888</a></p>
+            <p class="email"><a href="mailto:info@nocp.org" target="_blank">info@nocp.org</a></p>
+            <p class="website"><a href="https://neworleanscitypark.org/" target="_blank">Visit the website</a></p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/City+Park/@30.000957,-90.0959686,17z/data=!3m1!4b1!4m5!3m4!1s0x8620af1590d11e91:0x85b42a0bfac471a9!8m2!3d30.000957!4d-90.0937799"
+                    target="_blank">1 Palm Dr, New Orleans, LA 70124, United States</a></p>
         </div>
-        <div>
-            <a><h3>test</h3></a>
+        <div id="botanical-garden">
+            <a href="#botanical-garden">
+                <h3>Botanical Garden</h3>
+            </a>
+            <span>
+                <img src="./Images/botanical-garden.jpg">
+                <p>
+                    The New Orleans Botanical Garden is a botanical garden created in the 1930s in
+                    <a href="javascript:goTo('city-park')">the town's City Park</a>. It covers 12 acres of land, and
+                    contains more than 2,000 different plant species, from all around the world. It is separated in
+                    different sections, containing certain types of plants, or plants from a specific part of the world.
+                    It also contains a popular display : the Train Garden, a 1/22 scale of New Orleans as it was in the
+                    early 1800s. The train runs on a 400 meters long track, and the city model is entirely made of plant
+                    materials.
+                </p>
+            </span>
+            <p class="price">Children under 3 : free, children 3-12 : $6, adults : $12</p>
+            <p class="phone"><a href="tel:1-504-483-9402" target="_blank">+1 504-483-9402</a></p>
+            <p class="website"><a href="https://neworleanscitypark.org/visit-city-park/botanical-garden/"
+                    target="_blank">Visit the website</a></p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/New+Orleans+Botanical+Garden/@29.9873322,-90.0993215,17z/data=!3m1!4b1!4m5!3m4!1s0x8620af68b7c79f43:0x4377ba3ff473e1b6!8m2!3d29.9873322!4d-90.0971328"
+                    target="_blank">5 Victory Ave, New Orleans, LA 70119, United States</a></p>
         </div>
-        <div>
-            <a><h3>test</h3></a>
+        <div id="sculpture-garden">
+            <a href="#sculpture-garden">
+                <h3>Sydney and Walda Besthoff sculpture garden</h3>
+            </a>
+            <span>
+                <img src="./Images/besthoff.jpg">
+                <p>
+                    The Sydney and Walda Besthoff Sculpture Garden is located in <a href="javascript:goTo('city-park')">
+                    New Orleans' City Park</a>. It is a part of New Orleans' <a href="../Museums/?noma">Museum of Art
+                    </a>, and covers 7 acres of land, filled with modern art sculptures. Some of them are abstract, like
+                    the <i>Mirror Labyrinth</i> or the <i>Wind Sculpture V</i>, others are more realistic, like
+                    <i>Civitas</i> or <i>History of the conquest</i>. 
+                </p>
+            </span>
+            <p class="price">Free</p>
+            <p class="phone"><a href="tel:1-504-658-4100" target="_blank">+1 504-658-4100</a></p>
+            <p class="website"><a href="https://noma.org/besthoff-sculpture-garden/" target="_blank">Visit the
+                    website</a></p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/Sydney+and+Walda+Besthoff+Sculpture+Garden/@29.9859173,-90.0961901,17z/data=!3m1!5s0x8620af681d992935:0x8fc10fc0323e4960!4m12!1m6!3m5!1s0x8620af680fb761ed:0xd65e4c1692521fea!2sSydney+and+Walda+Besthoff+Sculpture+Garden!8m2!3d29.9859127!4d-90.0940014!3m4!1s0x8620af680fb761ed:0xd65e4c1692521fea!8m2!3d29.9859127!4d-90.0940014"
+                    target="_blank">1 Collins Diboll Cir, New Orleans, LA 70124, United States</a></p>
+        </div>
+        <div id="cathedral">
+            <a href="#cathedral">
+                <h3>St. Louis Cathedral</h3>
+            </a>
+            <span>
+                <img src="./Images/cathedral.jpg">
+                <p>
+                    The Cathedral-Basilica of Saint Louis, King of France is the oldest cathedral of the United States
+                    in continuous use. It was built in 1718, and escaped total obliteration multiple times, but was
+                    raised to the rank of cathedral in 1793 and was largely rebuilt and completed in the 1850s. Two
+                    popes also visited the cathedral : Paul VI in 1964, and John Paul II in 1987.
+                </p>
+            </span>
+            <p class="price">Free</p>
+            <p class="phone"><a href="tel:1-504-525-9585">+1 504-525-9585</a></p>
+            <p class="email"><a href="mailto:cathedral@arch-no.org" target="_blank">cathedral@arch-no.org</a></p>
+            <p class="website"><a href="https://www.stlouiscathedral.org/" target="_blank">Visit the website</a></p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/Cath%C3%A9drale+Saint-Louis+de+la+Nouvelle-Orl%C3%A9ans/@29.9579735,-90.0659168,17z/data=!3m1!4b1!4m5!3m4!1s0x8620a6119801364f:0x363da056dc3d85ae!8m2!3d29.9579735!4d-90.0637281"
+                    target="_blank">615 Pere Antoine Alley, New Orleans, LA 70116, United States</a></p>
+        </div>
+        <div id="plantation">
+            <a href="#plantation">
+                <h3>Oak Alley Plantation</h3>
+            </a>
+            <span>
+                <img src="./Images/oak-alley-plantation.jpg">
+                <p>
+                    Oak Alley Plantation is an old plantation near New Orleans. This National Historic site is composed
+                    of different exhibits, along with the plantation park and of course the plantation's mansion. This
+                    plantation, like many others, was based on the production of sugar from sugarcanes, and used slaves
+                    as working force to produce this sugar. That is why it was decided to transform it into a touristic
+                    place explaining the conditions of slaves during the 19<sup>th</sup> and 18<sup>th</sup> centuries.
+
+                </p>
+            </span>
+            <p class="price">Variating, check the website for current prices</p>
+            <p class="phone"><a href="tel:1-225-265-2151" target="_blank">+1 225-65-2151</a></p>
+            <p class="email"><a href="mailto:info@oakalleyplantation.com"
+                    target="_blank">info@oakalleyplantation.com</a></p>
+            <p class="website"><a href="https://oakalleyplantation.org" target="_blank">Visit the website</a></p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/Oak+Alley/@30.0042405,-90.7802244,17z/data=!3m1!4b1!4m5!3m4!1s0x86213045b86abc1f:0x55e32465c3486430!8m2!3d30.0042359!4d-90.7759972"
+                    target="_blank">3645 LA-18, Vacherie, LA 70090, United States</a></p>
+        </div>
+        <div id="armstrong-park">
+            <a href="#armstrong-park">
+                <h3>Louis Armstrong Park</h3>
+            </a>
+            <span>
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/NOTMC_444170-e9038b565056b36_e90391a8-5056-b365-ab3eeb5d2823ebf6.jpg">
+                <p>
+                    Often nicknamed as "Satch", "Pops" or "Louie", Louis Armstrong is one of the most famous jazzmen of
+                    all times. He's the author of the music <i>What a wonderful world</i>, one of the most known jazz
+                    music track in the world. As he was born and grew up in New Orleans, it was the town's duty to
+                    commemorate him, and his music. The park was originally named "Congo Square", because it was the
+                    place where slaves used to gather the Sunday afternoons to play African music, during the 18<sup>th
+                    </sup> and 19<sup>th</sup> centuries. Infrastructures were built on it in the 1960s, when it became
+                    the Louis Armstrong Park.
+                </p>
+            </span>
+            <p class="price">Free</p>
+            <p class="location"><a
+                    href="https://www.google.com/maps/place/Louis+Armstrong+Park/@29.9609356,-90.0669811,15z/data=!4m5!3m4!1s0x0:0x9f87c1b241badda6!8m2!3d29.9627574!4d-90.0677536"
+                    target="_blank">701 N Rampart St, New Orleans, LA 70116, United States</a></p>
         </div>
     </section>
     <footer>
-        <a>About us</a>
-        <a>Cookies</a>
-        <a>Privacy policy</a>
+        <a href="../AboutUs/">About us</a>
+        <a href="../Cookies/">Cookies</a>
+        <a href="../Privacy">Privacy policy</a>
+        <a href="../Sources/">Image Sources</a>
         <a href="javascript:changeTheme()">Change theme</a>
     </footer>
 </body>
