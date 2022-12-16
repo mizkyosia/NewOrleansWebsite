@@ -110,8 +110,9 @@
                 </a>
             </menu>
         </span>
-        <button id="easteregg" title="Click at your own risks" onclick="rickroll()">Secret button</button>
-        <audio id="rickroll" src="../easteregg.mp3" style="display: none;" loop></audio>
+        <button id="easteregg" title="Click at your own risks" onclick="meme()">Secret button</button>
+        <audio id="audio" style="display: none;"></audio>
+        <img id="meme" style="opacity: 0;">
     </header>
     <section class="top">
         <div class="photo" style="background-image: url(./Images/african-american-museum.jpg);"></div>
@@ -159,7 +160,12 @@
                 <img src="./Images/war-museum.jpg">
                 <p>
                     This museum is not a simple WWII museum. It has been designated by the U.S. Congress as the official
-                    national WWII museum of the United States in 2004. 
+                    national WWII museum of the United States in 2004. It opened its doors in 2000, and was primarily
+                    focused on the D-Day, with the amphibious invasion of Normandy. As the Higgins boats, that were
+                    vital to these amphibious operations, were designed, built and tested in New Orleans, the museum was
+                    naturally built in this same city. Multiple planes of WWII and a Higgins boat are in display in the
+                    museum. Multiple pavillons were also built alongside the D-Day one, to cover all the history of
+                    WWII.
                 </p>
             </span>
             <p class="price">Variable depending on the tour. Check the museum's website for more informations</p>
@@ -172,7 +178,15 @@
             <a>
                 <h3>McKenna Museum of African American art</h3>
             </a>
-            <img src="./Images/african-american-museum.jpg">
+            <span>
+                <img src="./Images/african-american-museum.jpg">
+                <p>
+                    African American culture is deeply rooted in New Orleans, since a long time ago. As such, it was only
+                    natural that a museum dedicated to that specific style of art was built in the city. Showcasing the
+                    art collection of Dr. Dwight McKenna, the George and Leah McKenna Museum of African American art was
+                    built in 2007, and was named after Dr. Dwight's parents.
+                </p>
+            </span>
             <p class="price">$20 per person</p>
             <p class="phone"><a href="tel:1-504-323-5074" target="_blank">+1 504-323-5074</a></p>
             <p class="email"><a href="mailto:info@lemuseedefpc.com" target="_blank">info@lemuseedefpc.com</a></p>
@@ -185,7 +199,18 @@
             <a>
                 <h3>Museum of Pharmacy</h3>
             </a>
-            <img src="./Images/pharmacy-museum.jpg">
+            <span>
+                <img src="./Images/pharmacy-museum.jpg">
+                <p>
+                    Listed on the National Register of Historic Places, this museum is an historic building located in
+                    the French Quarter of New Orleans. It covers the history of pharmacy, medication and healthcare in
+                    Louisiana. It displays old medicines as well as newer ones, ranging from voodoo potions to
+                    paracetamol, explaining the recognized and believed benefits of said medicines. It also explains the
+                    history of the first licensed pharmacist in the United States, who came from New Orleans. This man,
+                    Louis J. Dufilho Jr, passed a law that required a licensing examination for pharmacist who whished
+                    to practice their profession.
+                </p>
+            </span>
             <p class="price">$10 for adults, $7 for students, seniors and military, free for children 6 and under</p>
             <p class="phone"><a href="tel:1-504-565-8027" target="_blank">+1 504-565-8027</a></p>
             <p class="email"><a href="mailto:pharmacymuseum@gmail.com">pharmacymuseum@gmail.com</a></p>
@@ -194,7 +219,17 @@
         </div>
         <div id="mardi-gras">
             <a><h3>Mardi Gras World</h3></a>
-            <img src="./Images/mardi-gras-world.jpg">
+            <span>
+                <img src="./Images/mardi-gras-world.jpg">
+                <p>
+                    Mardi Gras is without a doubt the most known event that takes places in New Orleans. But it is not
+                    an event specific to the city ! It is celebrated in many towns around the world. Here at Mardi
+                    Gras World, you can visit the place where the floats for the Mardi Gras parade of New Orleans are
+                    built. This is a giant warehouse, covering 300,000 square feet, where multiple floats are at
+                    display. It was created in 1984 by Blaine Kern, as a tourist attraction to give visitors a
+                    behind-the-scenes look at float building.
+                </p>
+            </span>
             <p class="price">$22 for adults, $14 for children, $17 for students and seniors</p>
             <p class="phone"><a href="tel:1-504-361-7821" target="_blank">+1 504-361-7821</a></p>
             <p class="website"><a href="https://mardigrasworld.com/" target="_blank">Visit the website</a></p>
@@ -202,7 +237,17 @@
         </div>
         <div id="thnoc">
             <a><h3>The Historic New Orleans Collection</h3></a>
-            <img src="./Images/new-orleans-collection.jpg">
+            <span>
+                <img src="./Images/new-orleans-collection.jpg">
+                <p>
+                    The Historic New Orleans Collection (often abreviated as THNOC) is an institution established in
+                    1966 by  General and Mrs. L. Kemper Williams. They wanted to protect their collection of Louisiana
+                    materials, while still leaving it available for exhibition for the public, as well as for research.
+                    It consists of 35,000 library items, as well as no less than 150,000 photographs, prints, drawings,
+                    paintings and other visual artifacts. It covers a wide part of the history of New Orleans, starting
+                    from the Battle of New Orleans in 1815 to the life after Hurricane Katrina in 2005. 
+                </p>
+            </span>
             <p class="price">Free admission, variable price for some exhibitions</p>
             <p class="phone"><a href="tel:1-504-523-4662" target="_blank">+1 504-523-4662</a></p>
             <p class="email"><a href="mailto:wrc@hnoc.org" target="_blank">wrc@hnoc.org</a></p>
@@ -211,7 +256,17 @@
         </div>
         <div id="jazz">
             <a><h3>New Orleans Jazz Museum</h3></a>
-            <img src="./Images/jazz-museum.jpg">
+            <span>
+                <img src="./Images/jazz-museum.jpg">
+                <p>
+                    What would be New Orleans without its jazz ? This music has been a part of the city for so long now,
+                    it wouldn't be the same without it. That is why, the Jazz Museum was created, to commemorate the
+                    music that is so deeply rooted in New Orleans. It opened in 1961, and changed ownership and location
+                    multiple times, even closing out of bankruptcy once. It contains multiple artifacts of jazz, for
+                    example Louis Armstrong's first cornet, or even the first jazz recording ever made, on a disc from
+                    1917, as well as 12,000 photographs from the early days of jazz.
+                </p>
+            </span>
             <p class="price">$8 for adults, $6 for students, seniors and military, free for children of age 6 and under</p>
             <p class="phone"><a href="tel:1-504-568-6993" target="_blank">+1 504-568-6993</a></p>
             <p class="email"><a href="mailto:info@nolajazzmuseum.org" target="_blank">info@nolajazzmuseum.org</a></p>
@@ -220,7 +275,16 @@
         </div>
         <div id="voodoo">
             <a><h3>Voodoo Museum</h3></a>
-            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/68664_1316_08_7e524a94-5056-b365-ab3e73246dd84c74.jpg">
+            <span>
+                <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/68664_1316_08_7e524a94-5056-b365-ab3e73246dd84c74.jpg">
+                <p>
+                    New Orleans' Historic Voodoo Museum is a museum dedicated to the African diaspora religion of voodoo.
+                    It consists of two rooms containing voodoo gris-gris and other artifacts related to voodoo. It also
+                    hosts walking tours to the grave of Marie Laveau, considered as one (if not the one) of the most
+                    powerful voodoo priests in the entire world. The museum also has a voodoo priest on site, giving
+                    readings. It is a small museum, yet one of the few museums in the world entirely dedicated to voodoo.
+                </p>
+            </span>
             <p class="price">$8 for children 12 & under, seniors (65+), students, and military. $10 for adults</p>
             <p class="phone"><a href="tel:1-504-680-0128" target="_blank">+1 504-680-0128</a></p>
             <p class="email"><a href="mailto:voodoo@voodoomuseum.com" target="_blank">voodoo@voodoomuseum.com</a></p>

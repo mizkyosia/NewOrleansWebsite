@@ -46,6 +46,10 @@ section {
     justify-content: center;
 }
 
+a {
+    color: #009999;
+}
+
 h1 {
     font-size: 50px;
     border-radius: 30px;
@@ -147,5 +151,14 @@ body.light {
 }
 
 #easteregg.light {
-    color: #eeeeee;
+    color: #bbbbbb;
+}
+
+#meme {
+    width: 100%;
+    transition: none;
+    height: 100%;
+    position: fixed;
+    cursor:auto;
+    pointer-events: none;
 }

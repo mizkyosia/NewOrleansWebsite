@@ -1,27 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cookies - Visit New Orleans</title>
+
+<head>
+    <title>About Us - Visit New Orleans</title>
     <link rel="icon" href="../icon.png">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/list.css">
     <script src="../index.js"></script>
-    </head>
+</head>
 
-    <body>
-        <h1>
-            About Us
-        </h1>
-        <h2 style="margin-top: 100px;">
-            
-        </h2>
-        <footer>
-            <a href="../AboutUs/">About us</a>
-            <a href="../Cookies/">Cookies</a>
-            <a href="../Privacy">Privacy policy</a>
-            <a href="../Sources/">Image Sources</a>
-            <a href="javascript:changeTheme()">Change theme</a>
-        </footer>
-    </body>
+<body>
+    <header>
+        <span class="menu">
+            Museums
+            <menu>
+                <a href="../Museums/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Museums/#noma">NOMA</a>
+                <a href="../Museums/#ww2">WWII National Museum</a>
+                <a href="../Museums/#mckenna">African American Art Museum</a>
+                <a href="../Museums/#pharmacy">Museum of Pharmacy</a>
+                <a href="../Museums/mardi-gras">Mardi Gras World</a>
+                <a href="../Museums/#thnoc">Historic Collection</a>
+                <a href="../Museums/#jazz">Jazz Museum</a>
+                <a href="../Museums/#voodoo">Voodoo Museum</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-c49-New_Orleans_Louisiana.html"
+                    target="_blank">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Tourism
+            <menu>
+                <a href="../Tourism/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Tourism/#audubon">Audubon Zoo</a>
+                <a href="../Tourism/#city-park">New Orleans City Park</a>
+                <a href="../Tourism/#botanical-garden">Botanical Garden</a>
+                <a href="../Tourism/#sculpture-garden">Besthoff Sculpture Garden</a>
+                <a href="../Tourism/#cathedral">St Louis Cathedral</a>
+                <a href="../Tourism/#plantation">Oak Alley Plantation</a>
+                <a href="../Tourism/#armstrong-park">Louis Armstrong Park</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Food & Drinks
+            <menu>
+                <a href="../Restaurants/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Restaurants/#commander-palace">Commander's Palace</a>
+                <a href="../Restaurants/#cafe-du-monde">Café du Monde</a>
+                <a href="../Restaurants/#tipitina">Tipitina's</a>
+                <a href="../Restaurants/#pat-obrien">Pat O'Brien's Bar</a>
+                <a href="../Restaurants/#spotted-cat">Spotted Cat Music Club</a>
+                <a href="../Restaurants/#napoleon">Napoleon's House</a>
+                <a href="../Restaurants/#brennan">Brennan's</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Hotels
+            <menu>
+                <a href="../Hotels/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Hotels/#nopsi">NOPSI Hotel</a>
+                <a href="../Hotels/#ace">Ace Hotel</a>
+                <a href="../Hotels/#alder">Alder Hotel Uptown</a>
+                <a href="../Hotels/#ac-hotel">AC Hotel</a>
+                <a href="../Hotels/#andrew-jackson">Andrew Jackson Hotel</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <button id="easteregg" title="Click at your own risks" onclick="meme()">Secret button</button>
+        <audio id="audio" style="display: none;"></audio>
+        <img id="meme" style="opacity: 0;">
+    </header>
+    <section class="top">
+        <div class="photo" style="background-image: url(https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg);"></div>
+        <h1>About Us</h1>
+    </section>
+    <h2>
+        This website was made only for an english homework, it is not affiliated with the administration of New Orleans
+        in any way, shape or form
+    </h2>
+    <p>
+        Now that this point has been made clearly, let's talk more in detail of the actual website.<br>
+        <br>
+        Hi ! I'm the creator of the website. If you are interested in a behind-the-scenes look at this website, the
+        source code is available <a href="https://github.com/mizkyosia/NewOrleansWebsite">here, on my GitHub</a>. And
+        yes, i made all of this with my own lil' hands :D<br>
+        <br>
+        It's all made in HTML (for the raw elements, text and image), in CSS (for the style, if you remove CSS you get
+        a website with all the text and the images but nothing more, and it's really ugly. You can <a
+        href="javascript:removeCSS()">try doing it on this website</a> if you want), and a bit of JavaScript for the
+        responsive parts, like the dropdown menus. The code for this website is actually pretty clear (for once my code
+        isn't a total mess, yippee), so if you want to take a look into it, I believe you won't have a hard time
+        understanding the code. If you have some questions, you can still ask me on my GitHub.<br>
+        <br>
+        Hopefully few to none people will see this website, because I wanted to do a credit page for the images but it's
+        not finished yet, so i hope nobody will complain about the images not being sourced, i'm working on it !<br>
+        <br>
+        I also hid some easter eggs in this website, maybe you'll find those. Some are funny, some are less, but don't
+        worry, none of them are actually harmful to your computer or anything. And as i said, all the code is public,
+        so if you want to check by yourself you actually can !<br>
+        <br>
+        Welp, this lil' site took longer to create than expected, so i hope you enjoyed it. I know the content is not
+        well developped at all, and the style is atrocious in some ways, but i'm no artist and i have zero artistic
+        mind, so style wasn't my primary motive :/<br>
+        As for the content, i wish i could've done a bit better, but i already passed a far longer time than expected,
+        and i need to stop somewhere at some point. So yeah, it's clearly not finished, but at least it gave me a chance
+        to develop my skills in web developping, and creating a real website for once. And i'll probably get a good
+        grade for my homework too (Mrs Verharne, if you're reading that). So in the end, the time i passed on this was
+        worthy.<br>
+        <br>
+        Sorry for this big chunk of words ! I just had a few things to say, and here i am with all this wall of text.
+        I don't even know if it'll be red by anyone, but at least I did it. If you're still reading this, well thank you
+        firstly, and secondly while you're here, don't you wanna see some of my other projects ? They are all listed <a
+        href="mizkyosia.github.io">here</a>. For the moment, there's only a chess game, with a <i>feeeeew</i> lil' bugs in
+        2-player mode and a useless and non-working 1-player mode (my bot program just doesn't want to work, and i don't
+        even know WHY), but i'll try to improve it in the near future (can go from 3 days to 1.5 year, have some 
+        patience please).<br>
+        <br>
+        Well, since it's 1:42 am and that the urge to go to bed becomes louder and louder, i guess i'll publish this
+        and sleep. Have a good day, morning, afternoon, night or any time you're in at the moment, and hopefully i'll
+        see you in another of my projects !<br>
+        <br>
+        <br>
+        <br>
+        Miz'Kyosia, your local French dev
+    </p>
+    <footer>
+        <a href="../AboutUs/">About us</a>
+        <a href="../Cookies/">Cookies</a>
+        <a href="../Privacy">Privacy policy</a>
+        <a href="javascript:changeTheme()">Change theme</a>
+    </footer>
+</body>
+
 </html>

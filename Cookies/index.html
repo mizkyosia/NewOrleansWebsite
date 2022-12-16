@@ -1,37 +1,143 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Cookies - Visit New Orleans</title>
+
+<head>
+    <title>Cookies - Visit New Orleans</title>
     <link rel="icon" href="../icon.png">
     <link rel="stylesheet" href="../CSS/index.css">
     <link rel="stylesheet" href="../CSS/header.css">
     <script src="../index.js"></script>
-    </head>
+</head>
 
-    <body>
-        <h2 style="margin-top: 100px;">
-            This website does not use any web cookies. Seriously, you can check, i don't use them since i have no use for them. I've just put a link to this page in the footer so the website looks more <i>professional</i> and <i>serious</i>.
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            Here are some real cookies if you're hungry though :
-        </h2>
-        <img id="cookies" src="./cookies.png" style="width: auto;">
-        <footer>
-            <a href="../AboutUs/">About us</a>
-            <a href="../Cookies/">Cookies</a>
-            <a href="../Privacy">Privacy policy</a>
-            <a href="../Sources/">Image Sources</a>
-            <a href="javascript:changeTheme()">Change theme</a>
-        </footer>
-    </body>
+<body>
+    <header>
+        <span class="menu">
+            Museums
+            <menu>
+                <a href="../Museums/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Museums/#noma">NOMA</a>
+                <a href="../Museums/#ww2">WWII National Museum</a>
+                <a href="../Museums/#mckenna">African American Art Museum</a>
+                <a href="../Museums/#pharmacy">Museum of Pharmacy</a>
+                <a href="../Museums/mardi-gras">Mardi Gras World</a>
+                <a href="../Museums/#thnoc">Historic Collection</a>
+                <a href="../Museums/#jazz">Jazz Museum</a>
+                <a href="../Museums/#voodoo">Voodoo Museum</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-c49-New_Orleans_Louisiana.html"
+                    target="_blank">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Tourism
+            <menu>
+                <a href="../Tourism/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Tourism/#audubon">Audubon Zoo</a>
+                <a href="../Tourism/#city-park">New Orleans City Park</a>
+                <a href="../Tourism/#botanical-garden">Botanical Garden</a>
+                <a href="../Tourism/#sculpture-garden">Besthoff Sculpture Garden</a>
+                <a href="../Tourism/#cathedral">St Louis Cathedral</a>
+                <a href="../Tourism/#plantation">Oak Alley Plantation</a>
+                <a href="../Tourism/#armstrong-park">Louis Armstrong Park</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external"
+                    href="https://www.tripadvisor.com/Attractions-g60864-Activities-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Food & Drinks
+            <menu>
+                <a href="../Restaurants/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Restaurants/#commander-palace">Commander's Palace</a>
+                <a href="../Restaurants/#cafe-du-monde">Café du Monde</a>
+                <a href="../Restaurants/#tipitina">Tipitina's</a>
+                <a href="../Restaurants/#pat-obrien">Pat O'Brien's Bar</a>
+                <a href="../Restaurants/#spotted-cat">Spotted Cat Music Club</a>
+                <a href="../Restaurants/#napoleon">Napoleon's House</a>
+                <a href="../Restaurants/#brennan">Brennan's</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <span class="menu">
+            Hotels
+            <menu>
+                <a href="../Hotels/">
+                    Main page
+                </a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a href="../Hotels/#nopsi">NOPSI Hotel</a>
+                <a href="../Hotels/#ace">Ace Hotel</a>
+                <a href="../Hotels/#alder">Alder Hotel Uptown</a>
+                <a href="../Hotels/#ac-hotel">AC Hotel</a>
+                <a href="../Hotels/#andrew-jackson">Andrew Jackson Hotel</a>
+                <svg class="separator">
+                    <rect width="85%" height="2" fill="grey" style="transform: translateX(7.5%);" />
+                </svg>
+                <a class="external" href="https://www.tripadvisor.com/Restaurants-g60864-New_Orleans_Louisiana.html">
+                    TripAdvisor
+                </a>
+            </menu>
+        </span>
+        <button id="easteregg" title="Click at your own risks" onclick="meme()">Secret button</button>
+        <audio id="audio" style="display: none;"></audio>
+        <img id="meme" style="opacity: 0;">
+    </header>
+    <h2 style="margin-top: 100px;">
+        This website does not use any web cookies. Seriously, you can check, i don't use them since i have no use for
+        them. I've just put a link to this page in the footer so the website looks more <i>professional</i> and
+        <i>serious</i>.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        Here are some real cookies if you're hungry though :
+    </h2>
+    <img id="cookies" src="./cookies.png" style="width: auto;">
+    <footer>
+        <a href="../AboutUs/">About us</a>
+        <a href="../Cookies/">Cookies</a>
+        <a href="../Privacy">Privacy policy</a>
+        <a href="javascript:changeTheme()">Change theme</a>
+    </footer>
+</body>
+
 </html>
