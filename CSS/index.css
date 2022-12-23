@@ -36,6 +36,15 @@ img:not(.diapo, #cookies) {
     cursor: pointer;
 }
 
+/*--------------------------------------INDEX ARTICLES SECTION--------------------------------------*/
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*--------------------------------------TEXT & TITLES SECTION--------------------------------------*/
 
 section {
